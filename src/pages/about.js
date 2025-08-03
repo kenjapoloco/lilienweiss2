@@ -50,8 +50,8 @@ export default function About() {
             </ol>
           </div>
         </div>
-      <footer>
-          <div className='flex pt-7 pb-12 border-t border-green-200  w-full pl-[6vw] lg:pl-[10vw] text-[2vw] '>
+        <footer>
+          <div className='flex pt-7 pb-12 border-t border-green-200  w-full pl-[6vw] lg:pl-[10vw] text-[2vw] font-extrabold '>
               <Link className="flex " href="/"><Image className="mr-1" src="/img/icon.ico" alt="icon" width={10} height={10}/>ホーム</Link>
               <Link className="flex ml-5" href="/about"><Image className="mr-1" src="/img/icon.ico" alt="icon" width={10} height={10}/>リリエンワイスについて</Link>
               <Link className="flex ml-5" href="/music"><Image className="mr-1" src="/img/icon.ico" alt="icon"  width={10} height={10}/>過去の演奏会の音源</Link>
@@ -63,7 +63,6 @@ export default function About() {
               <img src="/img/hana.png"/>
           </div>
       </footer>
-      
     </div>
   );
 };
