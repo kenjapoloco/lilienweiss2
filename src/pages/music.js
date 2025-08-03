@@ -29,7 +29,6 @@ export default function Music() {
       </header>
       <div className="flex-col items-center text-center w-full">
           <div>
-            {/* <Image className="dark:invert" src="/img/2.png" alt="logo" width={1920} height={800} priority/> */}
             <h1 className="text-6xl z-2">Music Page</h1>
           </div>
           <div>
