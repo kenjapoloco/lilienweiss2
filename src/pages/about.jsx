@@ -1,5 +1,8 @@
 import React from 'react';
 import Image from "next/image";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import Head from "next/head";
@@ -7,7 +10,7 @@ import Head from "next/head";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"],});
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"],});
 
-export default function Contact() {
+export default function About() {
   const settings = {dots: true,};
   return (
     <div className={`${geistSans.className} ${geistMono.className} 
@@ -28,8 +31,17 @@ export default function Contact() {
        </div>
       </header>
       <div className="flex-col items-center text-center w-full">
-          <div>
-            <h1 className="text-6xl z-2">Contact Page</h1>
+         <div>
+            {/* <Image className="dark:invert" src="/img/2.png" alt="logo" width={1920} height={800} priority/> */}
+            <h1 className="text-6xl z-2">About Page</h1>
+          </div>
+          <div className="image-slider-container">
+            <Slider {...settings}>
+              <div className='w-full'><img  className="w-full" src="/img/1.png" alt="something" width={1290} height={800} /></div>
+              <div className='w-full'><img className="w-full" src="/img/2.png" alt="something" width={1290} height={800} /></div>
+              <div className='w-full'><img className="w-full" src="/img/3.png" alt="something" width={1290} height={800} /></div>
+              <div className='w-full'><img className="w-full" src="/img/4.png" alt="something" width={1290} height={800} /></div>
+            </Slider>
           </div>
           <div>
             <ol className="font-mono list-inside list-decimal text-sm/6 text-center">
@@ -43,8 +55,8 @@ export default function Contact() {
               <Link className="flex " href="/"><Image className="mr-1" src="/img/icon.ico" alt="icon" width={10} height={10}/>ホーム</Link>
               <Link className="flex ml-5" href="/about"><Image className="mr-1" src="/img/icon.ico" alt="icon" width={10} height={10}/>リリエンワイスについて</Link>
               <Link className="flex ml-5" href="/music"><Image className="mr-1" src="/img/icon.ico" alt="icon"  width={10} height={10}/>過去の演奏会の音源</Link>
-              <Link className="flex ml-5" href="/music"><Image className="mr-1" src="/img/icon.ico" alt="icon"  width={10} height={10}/>今後の演奏会</Link>
-              <Link className="flex ml-5" href="/music"><Image className="mr-1" src="/img/icon.ico" alt="icon"  width={10} height={10}/>連絡</Link>
+              <Link className="flex ml-5" href="/schedule"><Image className="mr-1" src="/img/icon.ico" alt="icon"  width={10} height={10}/>今後の演奏会</Link>
+              <Link className="flex ml-5" href="/contact"><Image className="mr-1" src="/img/icon.ico" alt="icon"  width={10} height={10}/>連絡</Link>
           </div>
           <div className="border-t border-green-200 w-full text-[2vw] pt-0.5 text-center">
               <p className=''>Copyright &copy: 2007 </p>
