@@ -1,10 +1,12 @@
-import React, { useRef } from 'react';
+import Head from "next/head";
 import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useRef, useState } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
-import Head from "next/head";
-import { useState } from "react" 
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"],});
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"],});
@@ -16,24 +18,26 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log("送信中・・・");
+    console.log(nameRef.current?.value);
 
-  let data = {
-    name: nameRef.current?.value,
-    email: emailRef.current?.value,
-    message: messageRef.current?.value,
-  };
-
-    await fetch("api/contact",{
-       method: "POST",
-       headers: {
-        Accept: "application/json, text/plain",
-        "Content-Type":"application/json",
-       },
-       body:JSON.stringify(data),
-      }).then((res)=> {
-        if(res.status === 200)console.log("送信成功");
-      });
+    let data = {
+      name: nameRef.current?.value,
+      email: emailRef.current?.value,
+      message: messageRef.current?.value,
     };
+
+    await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      if (res.status === 200) console.log("送信に成功しました");
+    });
+  };
 
 
   return ( 
@@ -56,28 +60,48 @@ export default function Contact() {
       </header>
       <div className="container mt-5">
             <h1 className="mt-5 text-center">メールでのお問い合わせ</h1>
-            <form onSubmit={(e) => handleSubmit(e)}>
-              <div className='mb-3'>
-                <label htmlFor="name" className='form-label'>
-                  お名前
-                </label>
-                <input type="text" className="form-control" id="name" required/>
-              </div>
-              <div className='mb-3'>
-                <label htmlFor="email" className='form-label'>
-                  メールアドレス
-                </label>
-                <input type="email" className="form-control" id="email" required/>
-              </div>
-              <div className='mb-3'>
-                <label htmlFor="message" className='form-label'>
-                 メッセージ
-                </label>
-                <textarea name='message' id="message" className='form-control'/>
-              </div> 
-                <button type="submit" className='btn btn-danger mb-5'>送信</button>
-            </form> 
-        </div>
+            <form
+          onSubmit={(e: React.FormEvent<HTMLFormElement>) => handleSubmit(e)}
+        >
+          <div className="mb-3">
+            <label className="form-label" htmlFor="name">
+              お名前
+            </label>
+            <input
+              className="form-control"
+              type="text"
+              id="name"
+              required
+              ref={nameRef}
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label" htmlFor="email">
+              メールアドレス
+            </label>
+            <input
+              className="form-control"
+              type="email"
+              id="email"
+              required
+              ref={emailRef}
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label" htmlFor="message">
+              メッセージ
+            </label>
+            <textarea
+              className="form-control"
+              id="message"
+              required
+              ref={messageRef}
+            />
+          </div>
+          <button className="btn btn-danger" type="submit">
+            メール送信
+          </button>
+        </form>
         <div className="w-2/3">
            <Image className="mb-5" src="/img/1.png" alt="logo" width={1920} height={540}/>
         </div>
@@ -94,6 +118,7 @@ export default function Contact() {
               <img src="/img/hana.png"/>
           </div>
         </footer>
+    </div>
     </div>
   );
 };
