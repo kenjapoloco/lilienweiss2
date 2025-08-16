@@ -29,6 +29,6 @@ export default function sendGmailer(req: NextApiRequest,res: NextApiResponse){
   transporter.sendMail(toHostMailData, function(err,info){
     if(err)console.log(err);
     else console.log(info);
-  });　
+  });
 
 }
