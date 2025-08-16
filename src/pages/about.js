@@ -5,7 +5,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
-import Head from "next/head";
+import Head from 'next/head';
+
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"],});
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"],});
@@ -13,43 +14,40 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export default function About() {
   const settings = {dots: true,};
   return (
-    <div className={`${geistSans.className} ${geistMono.className} 
-    font-sans container grid items-center justify-items-center min-h-screen`}>
+    <div className={`${geistSans.className} ${geistMono.className} font-sans container grid items-center justify-items-center min-h-screen w-full`}>
       <Head>
         <title>リリエンワイス</title>
+        <link rel="icon" href="/img/icon.png"/>
       </Head>
-      <header>
-       <div className=" text-gray-700 border-gray-200 w-full" >
-         <img  className="relative z-1" src="/img/header.png"/>
-            <ul className="absolute flex text-right top-full -right-full z-2">
-              <li href="/" className="mr-2 hover:text-blue-400 duration-300">ホーム</li>
-              <li href="/about" className="mr-2 hover:text-blue-400 duration-300">リリエンワイスについて</li>
-              <li href="/music" className="mr-2 hover:text-blue-400 duration-300">過去の音源</li>
-              <li href="/schedule" className="mr-2 hover:text-blue-400 duration-300">今後の予定</li>
-              <li href="/contact" className="hover:text-blue-400 duration-300">連絡</li>
-            </ul>
+      <header className="text-gray-700 border-b border-green-100 bg-pink-100 fixed w-full">
+       <div className="container flex mx-auto p-1 flex-col md:flex-row items-center" >
+         <img  className="" src="/img/header4.png" width={180} height={180}/>
+         <div className="md:ml-auto text-sm lg:mr-3 ">
+           <Link href="/" className="mr-4 hover:text-blue-400 duration-300">ホーム</Link>
+           <Link href="/about" className="mr-4 hover:text-blue-400 duration-300">リリエンワイスについて</Link>
+           <Link href="/music" className="mr-4 hover:text-blue-400 duration-300">過去の音源</Link>
+           <Link href="/schedule" className="mr-4 hover:text-blue-400 duration-300">今後の予定</Link>
+           <Link href="/contact" className="hover:text-blue-400 duration-300">連絡</Link>
+         </div>
        </div>
       </header>
-      <div className="flex-col items-center text-center w-full">
-         <div>
-            {/* <Image className="dark:invert" src="/img/2.png" alt="logo" width={1920} height={800} priority/> */}
-            <h1 className="text-6xl z-2">About Page</h1>
+      <div className="flex-col items-center text-left w-full mt-18 pt-15">
+         <div className='border-b border-black w-full'>
+            <h1 className="text-red-700 text-1xl font-bold ml-8">マンドリンアンサンブル<span className='text-red-700 text-2xl '>リリエンワイスについて</span></h1>
           </div>
-          <div className="image-slider-container">
-            <Slider {...settings}>
-              <div className='w-full'><img  className="w-full" src="/img/1.png" alt="something" width={1290} height={800} /></div>
-              <div className='w-full'><img className="w-full" src="/img/2.png" alt="something" width={1290} height={800} /></div>
-              <div className='w-full'><img className="w-full" src="/img/3.png" alt="something" width={1290} height={800} /></div>
-              <div className='w-full'><img className="w-full" src="/img/4.png" alt="something" width={1290} height={800} /></div>
-            </Slider>
-          </div>
-          <div>
-            <ol className="font-mono list-inside list-decimal text-sm/6 text-center">
-              <li className="mb-2 tracking-[-.01em]">Get started by editing{" "}<code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">src/pages/index.js</code>.</li>
-              <li className="tracking-[-.01em]">Save and see your changes instantly.</li>
-            </ol>
+          <div >
+            <h1 className="text-gray-700 text-1xl font-500 ml-15 mr-15 mt-5 mb-5">
+             愛知県中心に活動するマンドリンアンサンブル『リリエンワイス』は、
+             金城学院大学と金城学院短期大学のギターマンドリンクラブの卒部生有志により1998年に誕生。
+             学生時代に出会った音楽への思いという灯火を持ち寄り、これまで訪問演奏や母校での演奏をしてまいりました。
+             演奏会を定期的に開いておりますので、少しでも私たちの音楽で喜びを感じていただければ身に余る光栄です。
+            </h1>
           </div>
         </div>
+        <div className="">
+           <Image className="" src="/img/2.png" alt="logo" width={1920} height={540}/>
+        </div>
+
         <footer>
           <div className='flex pt-7 pb-12 border-t border-green-200  w-full pl-[6vw] lg:pl-[10vw] text-[2vw] font-extrabold '>
               <Link className="flex " href="/"><Image className="mr-1" src="/img/icon.ico" alt="icon" width={10} height={10}/>ホーム</Link>
