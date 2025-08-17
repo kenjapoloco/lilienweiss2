@@ -65,7 +65,7 @@ export default function Contact() {
         >
           <div className="mb-3">
             <label className="form-label" htmlFor="name">
-              お名前
+              名前
             </label>
             <input
               className="form-control"
