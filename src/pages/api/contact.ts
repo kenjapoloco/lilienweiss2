@@ -20,10 +20,13 @@ export default function sendmail(req: NextApiRequest, res: NextApiResponse) {
     html: `
       <p>【名前】</p>
       <p>${req.body.name}</p>
-      <p>【メッセージ】</p>
-      <p>${req.body.message}</p>
       <p>【メールアドレス】</p>
       <p>${req.body.email}</p>
+      <p>【電話番号】</p>
+      <p>${req.body.tel}</p>
+      <p>【メッセージ】</p>
+      <p>${req.body.message}</p>
+
     `,
   };
 

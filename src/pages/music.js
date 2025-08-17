@@ -14,17 +14,18 @@ export default function Music() {
     font-sans container grid items-center justify-items-center min-h-screen`}>
       <Head>
         <title>リリエンワイス</title>
+        <link rel="icon" href="favicon.ico"/>
       </Head>
-      <header>
-       <div className=" text-gray-700 border-gray-200 w-full" >
-         <img  className="relative z-1" src="/img/header.png"/>
-            <ul className="absolute flex text-right top-full -right-full z-2">
-              <li href="/" className="mr-2 hover:text-blue-400 duration-300">ホーム</li>
-              <li href="/about" className="mr-2 hover:text-blue-400 duration-300">リリエンワイスについて</li>
-              <li href="/music" className="mr-2 hover:text-blue-400 duration-300">過去の音源</li>
-              <li href="/schedule" className="mr-2 hover:text-blue-400 duration-300">今後の予定</li>
-              <li href="/contact" className="hover:text-blue-400 duration-300">連絡</li>
-            </ul>
+      <header className="text-gray-700 border-b border-green-100 bg-pink-100 fixed w-full">
+       <div className="container flex mx-auto p-1 flex-col md:flex-row items-center md:items-end" >
+         <img  className="" src="/img/header4.png" width={180} height={180}/>
+         <div className="md:ml-auto mr-10  lg:mr-3 items-end">
+           <Link href="/" className="mr-4 hover:text-blue-400 duration-300">ホーム</Link>
+           <Link href="/about" className="mr-4 hover:text-blue-400 duration-300">リリエンワイスについて</Link>
+           <Link href="/music" className="mr-4 hover:text-blue-400 duration-300">過去の音源</Link>
+           <Link href="/schedule" className="mr-4 hover:text-blue-400 duration-300">今後の予定</Link>
+           <Link href="/contact" className="hover:text-blue-400 duration-300">連絡</Link>
+         </div>
        </div>
       </header>
       <div className="flex-col items-center text-center w-full">
@@ -39,18 +40,18 @@ export default function Music() {
           </div>
         </div>
         <footer>
-          <div className='flex pt-3 pb-15 border-t border-green-200  w-full pl-[6vw] lg:pl-[10vw] text-[2vw] font-bold '>
+          <div className='flex justify-center pt-3 pb-15 border-t border-green-200  w-full pl-[6vw] lg:pl-[10vw] text-1xl font-bold text-center'>
               <Link className="flex " href="/"><Image className="mr-1" src="/img/icon.png" alt="icon" width={10} height={10}/>ホーム</Link>
-              <Link className="flex ml-5" href="/about"><Image className="mr-1" src="/img/icon.png" alt="icon" width={10} height={10}/>リリエンワイスについて</Link>
+              <Link className="flex ml-5" href="/about"><Image className="mr-1" src="/img/icon.png" alt="icon" width={10} height={10}/>楽団について</Link>
               <Link className="flex ml-5" href="/music"><Image className="mr-1" src="/img/icon.png" alt="icon"  width={10} height={10}/>過去の音源</Link>
               <Link className="flex ml-5" href="/schedule"><Image className="mr-1" src="/img/icon.png" alt="icon"  width={10} height={10}/>今後の演奏会</Link>
               <Link className="flex ml-5" href="/contact"><Image className="mr-1" src="/img/icon.png" alt="icon"  width={10} height={10}/>連絡</Link>
           </div>
-          <div className="border-t border-green-200 w-full text-[2vw] pt-0.5 text-center">
+          <div className="border-t border-green-200 w-full text-1xl pt-0.5 text-center">
               <p className=''>Copyright &copy: 2007 </p>
               <img src="/img/hana.png"/>
           </div>
-        </footer>
+      </footer>
     </div>
   );
 };

@@ -14,22 +14,22 @@ export default function Schedule() {
   const settings = {dots: true,};
   return (
     <div className={`${geistSans.className} ${geistMono.className} font-sans container grid items-center justify-items-center min-h-screen w-full`}>
-    <Head>
+      <Head>
         <title>リリエンワイス</title>
-        <link rel="icon" href="/img/icon.png"/>
-    </Head>
-    <header className="text-gray-700 border-b border-green-100 bg-pink-100 fixed w-full">
-     <div className="container flex mx-auto p-1 flex-col md:flex-row items-center" >
-       <img  className="" src="/img/header4.png" width={180} height={180}/>
-       <div className="md:ml-auto text-sm lg:mr-3 ">
-         <Link href="/" className="mr-4 hover:text-blue-400 duration-300">ホーム</Link>
-         <Link href="/about" className="mr-4 hover:text-blue-400 duration-300">リリエンワイスについて</Link>
-         <Link href="/music" className="mr-4 hover:text-blue-400 duration-300">過去の音源</Link>
-         <Link href="/schedule" className="mr-4 hover:text-blue-400 duration-300">今後の予定</Link>
-         <Link href="/contact" className="hover:text-blue-400 duration-300">連絡</Link>
+        <link rel="icon" href="favicon.ico"/>
+      </Head>
+      <header className="text-gray-700 border-b border-green-100 bg-pink-100 fixed w-full">
+       <div className="container flex mx-auto p-1 flex-col md:flex-row items-center md:items-end" >
+         <img  className="" src="/img/header4.png" width={180} height={180}/>
+         <div className="md:ml-auto mr-10  lg:mr-3 items-end">
+           <Link href="/" className="mr-4 hover:text-blue-400 duration-300">ホーム</Link>
+           <Link href="/about" className="mr-4 hover:text-blue-400 duration-300">リリエンワイスについて</Link>
+           <Link href="/music" className="mr-4 hover:text-blue-400 duration-300">過去の音源</Link>
+           <Link href="/schedule" className="mr-4 hover:text-blue-400 duration-300">今後の予定</Link>
+           <Link href="/contact" className="hover:text-blue-400 duration-300">連絡</Link>
+         </div>
        </div>
-     </div>
-    </header>
+      </header>
     <div className="flex-col items-center text-left w-full mt-18 pt-15">
        <div className='border-b border-black w-full'>
           <h1 className="text-red-700 text-2xl font-medium ml-8">今後の演奏会について</h1>
@@ -55,18 +55,18 @@ export default function Schedule() {
             </div>
           </div>
           <footer>
-          <div className='flex pt-3 pb-15 border-t border-green-200  w-full pl-[6vw] lg:pl-[10vw] text-[2vw] font-bold '>
+          <div className='flex justify-center pt-3 pb-15 border-t border-green-200  w-full pl-[6vw] lg:pl-[10vw] text-1xl font-bold text-center'>
               <Link className="flex " href="/"><Image className="mr-1" src="/img/icon.png" alt="icon" width={10} height={10}/>ホーム</Link>
-              <Link className="flex ml-5" href="/about"><Image className="mr-1" src="/img/icon.png" alt="icon" width={10} height={10}/>リリエンワイスについて</Link>
+              <Link className="flex ml-5" href="/about"><Image className="mr-1" src="/img/icon.png" alt="icon" width={10} height={10}/>楽団について</Link>
               <Link className="flex ml-5" href="/music"><Image className="mr-1" src="/img/icon.png" alt="icon"  width={10} height={10}/>過去の音源</Link>
               <Link className="flex ml-5" href="/schedule"><Image className="mr-1" src="/img/icon.png" alt="icon"  width={10} height={10}/>今後の演奏会</Link>
               <Link className="flex ml-5" href="/contact"><Image className="mr-1" src="/img/icon.png" alt="icon"  width={10} height={10}/>連絡</Link>
           </div>
-          <div className="border-t border-green-200 w-full text-[2vw] pt-0.5 text-center">
+          <div className="border-t border-green-200 w-full text-1xl pt-0.5 text-center">
               <p className=''>Copyright &copy: 2007 </p>
               <img src="/img/hana.png"/>
           </div>
-        </footer>
+      </footer>
   </div>
   );
 };

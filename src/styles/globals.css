@@ -27,8 +27,8 @@ body {
 }
 
 .header{
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .header img{
@@ -36,7 +36,7 @@ width:fit-content;
 height:fit-content;
 }
 
-.image-slider-container {
+/* .image-slider-container {
   margin:0px 0px;
   padding:0px 0px;
   width: 86vw;
@@ -45,4 +45,4 @@ height:fit-content;
 .image-slider-container .slick-prev:before,
 .image-slider-container .slick-next:before {
   color: black;
-}
+} */
