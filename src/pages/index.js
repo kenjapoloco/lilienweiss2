@@ -27,27 +27,28 @@ export default function Home() {
          </div>
        </div>
       </header>
-      <div className="flex-row container text-center mt-50">
-        <h1 className="text-2xl">リリエンワイスのホームページへようこそ</h1>
-        <Image className="" src="/img/index2.png" alt="logo" width={1920} height={540}/>
+      <div className="container flex flex-col mt-16 w-full">
+        <Image className="flex flex-col items-center" src="/img/index2.png" alt="logo" width={1920} height={540}/>
+        <h1 className="text-1xl font-medium mt-5 ml-5">リリエンワイスのホームページへようこそ</h1>
+        <div>
+          <h2 className='text-2xl text-red-600 font-extrabold mt-5 ml-5 border-b border-gray-500'>🌸ごあいさつ</h2>
+          <p className='p-5 items-center ml-10'>こちらは愛知県で活動するギターマンドリンアンサンブル『リリエンワイス』のホームページです。<br/>
+          演奏会の告知やYoutubeによる過去の演奏会の音源などの情報を発信してます。良かったら見て行ってください。</p>
+        </div>
+        <div>
+          <h2 className='text-2xl text-red-600 font-extrabold mt-5 ml-5 border-b border-gray-500'>🌸お知らせ</h2>
+          <p className='p-5 items-center ml-10'>
+            次回の定期演奏会は、令和7年11月20日(木)に愛知県名古屋市の電気文化会館 ザ・コンサートホールで行います。
+          </p>
+        </div>      
       </div>
-
-        <section className="text-gray-700" id="home">
-          <div className="flex container mx-auto py-20 px-30 flex-col md:flex-row items-center justify-center">
-            <div className="md:w-1/2 flex-grow mb-16 lg:pr-24 md:pr-16 items-center text-center md:text-left">
-              <p className="text-3xl font-bold text text-red-400">
-                次回の定期演奏会
-              </p>
-              <h1 className="text-3xl font-extrabold text-red-700">
-              <span className="text-3xl font-bold text-black">令和7年11月20日(木)</span><br />名古屋市<br />電気文化会館<br />ザ・コンサートホール 
-              </h1>
-              <button href="/schedule" className="text-white font-bold bg-green-500 mt-3 py-2 px-3 border-0 rounded text-lg hover:bg-green-400 duration-300">詳細はこちら</button>
-            </div>
-            <div className="md:w-1/2 lg:max-w-lg w-5/6">
-              <img src="/img/paper.png" alt="パンフレット" width={1080} height={1542} />
-            </div>
-            </div>
-        </section>
+      <section className='container justify-center flex-col mb-16 w-full'>
+      <div className="flex flex-col mb-15 lg:pr-24 md:pr-16 items-center text-center">
+        <button href="/schedule" className="text-white font-bold bg-green-500 mb-10 py-1 px-2 border-0 rounded text-lg hover:bg-green-400 duration-300">詳細はこちら</button>
+        <img className='w-2/3' src="/img/paper.png" alt="パンフレット" width={1080} height={1542} />
+      </div> 
+      </section>
+ 
         <footer>
           <div className='flex justify-center pt-5 pb-15 border-t border-green-200  w-full  text-1xl font-bold text-center'>
               <Link className="flex " href="/"><Image className="mr-1" src="/img/icon.png" alt="icon" width={10} height={10}/>ホーム</Link>
