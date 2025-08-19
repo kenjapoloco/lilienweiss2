@@ -27,7 +27,7 @@ export default function Home() {
          </div>
        </div>
       </header>
-      <div className="container flex flex-col mt-16 w-full">
+      <div className="container flex-col mt-16 w-full items-center">
         <Image className="flex flex-col items-center" src="/img/index2.png" alt="logo" width={1920} height={540}/>
         <h1 className="text-1xl font-medium mt-5 ml-5">リリエンワイスのホームページへようこそ</h1>
         <div>

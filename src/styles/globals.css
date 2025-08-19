@@ -32,6 +32,33 @@ width:fit-content;
 height:fit-content;
 }
 
+header {
+  position: fixed;
+  z-index: 1;
+}
+
+.wrapper {
+  width: 94%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  width: calc(100% - 300px);
+}
+.sidebar {
+  margin-top: 30px;
+  position: sticky;
+  width: 280px;
+}
+.widget + .widget {
+  margin-top: 20px;
+}
+.widget--sticky {
+  top: 20px;
+}
+
 /* .image-slider-container {
   margin:0px 0px;
   padding:0px 0px;

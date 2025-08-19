@@ -3,12 +3,12 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import Head from "next/head";
+import { Table } from 'react-bootstrap';
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"],});
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"],});
 
 export default function Music() {
-  const settings = {dots: true,};
   return (
     <div className={`${geistSans.className} ${geistMono.className} font-sans`}>
       <Head>
@@ -17,7 +17,7 @@ export default function Music() {
       </Head>
       <header className="text-pink-500 font-medium text-shadow-2xs border-b border-gray-300 bg-pink-100 fixed w-full top-0">
        <div className="container flex mx-auto flex-col p-1 md:flex-row items-center md:items-end justify-between" >
-         <img  className="mb-1 md:mb-0 lg:ml-5" src="/img/header4.png" width={180} height={180}/>
+         <Image  className="mb-1 md:mb-0 lg:ml-5" src="/img/header4.png" width={180} height={180} alt=''/>
          <div className="md:ml-auto text-base">
            <Link href="/" className="mr-4 hover:text-pink-400 duration-300">ホーム</Link>
            <Link href="/about" className="mr-4 hover:text-pink-400 duration-300">リリエンワイスについて</Link>
@@ -27,16 +27,59 @@ export default function Music() {
          </div>
        </div>
       </header>
-      <div className="flex-col items-center text-center w-full">
-          <div>
-            <h1 className="text-6xl z-2">Music Page</h1>
-          </div>
-          <div>
-            <ol className="font-mono list-inside list-decimal text-sm/6 text-center">
-              <li className="mb-2 tracking-[-.01em]">Get started by editing{" "}<code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">src/pages/index.js</code>.</li>
-              <li className="tracking-[-.01em]">Save and see your changes instantly.</li>
-            </ol>
-          </div>
+      <div class="wrapper" className='mt-35 w-full flex justify-space-between'>
+        <div className='text-1xl text-green-500 font-bold min-w-65'>
+          <aside class="sidebar" className='sticky'>
+            <div class="widget" className='text-start'>
+              <p>＜過去の演奏会の曲目＞</p>
+              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第1回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第2回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第3回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第4回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第5回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第6回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第7回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第8回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第9回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第10回定期演奏会 2007.11.23</Link><br/>
+            </div>
+          </aside>
+        </div>
+        <main class="main" className='container items-center text-center flex flex-col mr-5'>
+          <h1 className="text-3xl font-bold md:text-5xl z-2 flex flex-col mb-3">第1回定期演奏会</h1>
+          <Table border="1" cellpadding="2" className='flex flex-col border border-slate-500'>
+              <tbody>
+                <tr>
+                  <td class="index_center border border-slate-600 font-bold" width="65" valign="top">日時</td>
+                  <td class="data border border-slate-600 text-center" width="300">2025年2月16日(日)<br/></td>
+                  <td class="index_center border border-slate-600 font-bold" width="65" valign="top">会場</td>
+                  <td class="data border border-slate-600" width="420">名古屋市電気文化会館ザ・コンサートホール</td>
+                </tr>
+                <tr>
+                  <td class="index_center border border-slate-600 font-bold" width="35" valign="top">曲目</td>
+                  <td class="data border border-slate-600" colspan="3">
+                  ＜第１部＞ <br/>
+                  プロヴァンス風序曲 (A.トゥルネル)<br/>
+                  詩的間奏曲 (A.カッペッレッティ)<br/>
+                  珍獣たちの園 (水野真人)<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ディベルティメント第2番 「おとぎの国の少年」より)<br/>
+                  夜明けの賛歌 (藤掛廣幸)<br/><br/>
+
+                  ＜第２部＞ <br/>
+                  ワルツ「水彩画」(ヨーゼフ・シュトラウス)<br/>
+                  交響的牧歌「夕暮れに」より詩曲(Z.フィビフ)<br/>
+                  カンタータ「歌」より間奏曲(W.ステンハンマル)<br/>
+                  歌劇「メデア」序曲（L.ケルビーニ）<br/><br/>
+                  ＜アンコール＞<br/>
+                  交響曲第29番K.201より第1楽章(W.A.モーツァルト)<br/><br/><br/>
+                  </td>
+                </tr>
+              </tbody>
+            </Table>
+            <div className='mb-10 text-pink-600 flex flex-col'>
+              <a href="#top" className="flex hover:text-pink-400 duration-300">Page Top</a>
+            </div>
+          </main>
         </div>
         <footer>
           <div className='flex justify-center pt-5 pb-15 border-t border-green-200  w-full  text-1xl font-bold text-center'>
@@ -50,7 +93,7 @@ export default function Music() {
               <p className='flex justify-center  w-full text-1xl pt-0.5 text-center'>Copyright &copy: 2025 </p>
               <img className="w-full center" src="/img/hana.png" width={1980} height={10}/>
           </div>
-      </footer>
-    </div>
+        </footer>
+     </div>
   );
 };
