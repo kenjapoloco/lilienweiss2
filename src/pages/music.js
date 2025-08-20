@@ -27,26 +27,24 @@ export default function Music() {
          </div>
        </div>
       </header>
-      <div class="wrapper" className='mt-35 w-full flex justify-space-between'>
-        <div className='text-1xl text-green-500 font-bold min-w-65'>
-          <aside class="sidebar" className='sticky'>
-            <div class="widget" className='text-start'>
-              <p>＜過去の演奏会の曲目＞</p>
-              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第1回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第2回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第3回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第4回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第5回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第6回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第7回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第8回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第9回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300">⚫︎第10回定期演奏会 2007.11.23</Link><br/>
-            </div>
+      <div class="wrapper" className='w-full flex justify-space-between'>
+        <div className='text-1xl text-end md:text-center text-white bg-green-200 font-bold min-w-55 md:min-w-fit'>
+          <aside class="sidebar" className='sticky top-30 col-span-1 mt-40 ml-5 mr-5'>
+              <p className='text-black font-extrabold'>＜過去の演奏会の曲目＞</p>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第1回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第2回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第3回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第4回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第5回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第6回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第7回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第8回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第9回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第10回定期演奏会 2007.11.23</Link><br/>
           </aside>
         </div>
-        <main class="main" className='container items-center text-center flex flex-col mr-5'>
-          <h1 className="text-3xl font-bold md:text-5xl z-2 flex flex-col mb-3">第1回定期演奏会</h1>
+        <main class="main" className='container items-center text-center flex flex-col mr-5 ml-5 mt-40'>
+          <h1 className="text-3xl font-bold md:text-5xl flex flex-col mb-3">第1回定期演奏会</h1>
           <Table border="1" cellpadding="2" className='flex flex-col border border-slate-500'>
               <tbody>
                 <tr>
