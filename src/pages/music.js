@@ -31,16 +31,17 @@ export default function Music() {
         <div className='text-1xl text-end md:text-center text-white bg-green-200 font-bold min-w-55 md:min-w-fit'>
           <aside class="sidebar" className='sticky top-30 col-span-1 mt-40 ml-5 mr-5'>
               <p className='text-black font-extrabold'>＜過去の演奏会の曲目＞</p>
-              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第1回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第2回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第1回定期演奏会 2003.12.21</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第2回定期演奏会 2005.12.18</Link><br/>
               <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第3回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第4回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第5回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第6回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第7回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第8回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第9回定期演奏会 2007.11.23</Link><br/>
-              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第10回定期演奏会 2007.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第4回定期演奏会 2009.11.23</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第5回定期演奏会 2011.12.22</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第6回定期演奏会 2014.12.7</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第7回定期演奏会 2016.11.3</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第8回定期演奏会 2017.11.30</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第9回定期演奏会 2019.11.21</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第10回定期演奏会 2023.11.5</Link><br/>
+              <Link href="/contact" className=" hover:text-green-400 duration-300 [text-shadow:_1px_1px_4px_var(--tw-shadow-color)] shadow-black">⚫︎第11回定期演奏会 2024.12.12</Link><br/>
           </aside>
         </div>
         <main class="main" className='container items-center text-center flex flex-col mr-5 ml-5 mt-40'>
