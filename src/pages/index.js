@@ -21,7 +21,7 @@ export default function Home() {
          <div className="md:ml-auto text-base">
            <Link href="/" className="mr-4 hover:text-pink-400 duration-300">ホーム</Link>
            <Link href="/about" className="mr-4 hover:text-pink-400 duration-300">リリエンワイスについて</Link>
-           <Link href="/music" className="mr-4 hover:text-pink-400 duration-300">過去の音源</Link>
+           <Link href="/music" className="mr-4 hover:text-pink-400 duration-300">過去の演奏</Link>
            <Link href="/schedule" className="mr-4 hover:text-pink-400 duration-300">今後の予定</Link>
            <Link href="/contact" className="md:mr-5 hover:text-pink-400 duration-300">連絡</Link>
          </div>
@@ -53,8 +53,8 @@ export default function Home() {
           <div className='flex justify-center pt-5 pb-15 border-t border-green-200  w-full  text-1xl font-bold text-center'>
               <Link className="flex " href="/"><Image className="mr-1" src="/img/icon.png" alt="icon" width={10} height={10}/>ホーム</Link>
               <Link className="flex ml-5" href="/about"><Image className="mr-1" src="/img/icon.png" alt="icon" width={10} height={10}/>楽団について</Link>
-              <Link className="flex ml-5" href="/music"><Image className="mr-1" src="/img/icon.png" alt="icon"  width={10} height={10}/>過去の音源</Link>
-              <Link className="flex ml-5" href="/schedule"><Image className="mr-1" src="/img/icon.png" alt="icon"  width={10} height={10}/>今後の演奏会</Link>
+              <Link className="flex ml-5" href="/music"><Image className="mr-1" src="/img/icon.png" alt="icon"  width={10} height={10}/>過去の演奏</Link>
+              <Link className="flex ml-5" href="/schedule"><Image className="mr-1" src="/img/icon.png" alt="icon"  width={10} height={10}/>今後の予定</Link>
               <Link className="flex ml-5" href="/contact"><Image className="mr-1" src="/img/icon.png" alt="icon"  width={10} height={10}/>連絡</Link>
           </div>
           <div className="w-full">

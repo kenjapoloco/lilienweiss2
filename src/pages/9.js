@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import Head from "next/head";
 import { Table } from 'react-bootstrap';
+import { YouTubeEmbed } from '@next/third-parties/google'
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"],});
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"],});
@@ -45,38 +46,83 @@ export default function Music() {
           </aside>
         </div>
         <main class="main" className='container items-center text-center flex flex-col mr-5 ml-5 mt-40'>
-          <h1 className="text-3xl font-bold md:text-5xl flex flex-col mb-3">第1回定期演奏会</h1>
+        <div className='mb-5 text-pink-600 flex flex-row'>
+            <a href="/8" className="flex mb-2 hover:text-pink-400 duration-300">＜前年へ</a>
+              <a href="/10" className="flex ml-30 md:ml-75 lg:ml-130 hover:text-pink-400 duration-300">次年へ＞</a>
+            </div>
+          <h1 className="text-3xl font-bold md:text-5xl flex flex-col mb-3">第9回定期演奏会</h1>
           <Table border="1" cellpadding="2" className='flex flex-col border border-slate-500'>
               <tbody>
                 <tr>
                   <td class="index_center border border-slate-600 font-bold" width="65" valign="top">日時</td>
-                  <td class="data border border-slate-600 text-center" width="300">2025年2月16日(日)<br/></td>
+                  <td class="data border border-slate-600 text-center" width="330">2005年12月18日(日)<br/></td>
                   <td class="index_center border border-slate-600 font-bold" width="65" valign="top">会場</td>
                   <td class="data border border-slate-600" width="420">名古屋市電気文化会館ザ・コンサートホール</td>
                 </tr>
                 <tr>
                   <td class="index_center border border-slate-600 font-bold" width="35" valign="top">曲目</td>
-                  <td class="data border border-slate-600" colspan="3">
+                  <td class="data border border-slate-600 text-start p-5 items-center" colspan="3">
                   ＜第１部＞ <br/>
-                  プロヴァンス風序曲 (A.トゥルネル)<br/>
-                  詩的間奏曲 (A.カッペッレッティ)<br/>
-                  珍獣たちの園 (水野真人)<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ディベルティメント第2番 「おとぎの国の少年」より)<br/>
-                  夜明けの賛歌 (藤掛廣幸)<br/><br/>
+                    ①ひとりぼっちの晩餐会 ~映画“美女と野獣”より <br/>
+                    Alan Menken/武藤理恵編曲<br/>
+                    <YouTubeEmbed videoid="NQf7Wp5l-9A" width={280} params="controls=0" className="" /><br/>
 
-                  ＜第２部＞ <br/>
-                  ワルツ「水彩画」(ヨーゼフ・シュトラウス)<br/>
-                  交響的牧歌「夕暮れに」より詩曲(Z.フィビフ)<br/>
-                  カンタータ「歌」より間奏曲(W.ステンハンマル)<br/>
-                  歌劇「メデア」序曲（L.ケルビーニ）<br/><br/>
-                  ＜アンコール＞<br/>
-                  交響曲第29番K.201より第1楽章(W.A.モーツァルト)<br/><br/><br/>
+                    ②PLUCKING STRINGS / Julius Steffaro<br/>
+                    <YouTubeEmbed videoid="qp84DqYOpRo" width={280} params="controls=0" className="items-center" /><br/>
+
+                    ④学生王子のセレナード/Sigmund Romberg<br/>
+                    <YouTubeEmbed videoid="wCSdKXDftaQ" width={280} params="controls=0" className="items-center" /><br/>
+
+                    ⑤序曲“レナータ”/ Hyacinthe Lavitrano<br/>
+                    <YouTubeEmbed videoid="LVBGuSQuhxY" width={280} params="controls=0" className="items-center" /><br/>
+
+                    ⑥アヴェマリア/ Franz Schubert/中野二郎編曲<br/>
+                    <YouTubeEmbed videoid="6OVcfXPm0F4" width={280} params="controls=0" className="items-center" /><br/>
+
+                    讃美歌シリーズ<br/>
+                    ⑦“神の御子は”<br/>
+                    <YouTubeEmbed videoid="1sEnhNxLZ2I" width={280} params="controls=0" className="items-center" /><br/>
+
+                    ⑧“天にはさかえ”<br/>
+                    <YouTubeEmbed videoid="U2oylu0Rj30" width={280} params="controls=0" className="items-center" /><br/>
+
+                    ⑨“きよしこの夜”<br/>
+                    <YouTubeEmbed videoid="btKmgHQXZLw" width={280} params="controls=0" className="items-center" /><br/>
+
+                    ⑩“牧人ひつじを”<br/>
+                    <YouTubeEmbed videoid="EjS05Wo3o5Q" width={280} params="controls=0" className="items-center" /><br/>
+
+                    11. ”もろびとこぞりて” 帰山栄治編曲<br/>
+                    <YouTubeEmbed videoid="kGLtLSRtKGs" width={280} params="controls=0" className="items-center" /><br/>
+
+                    12. ”HOLY NIGHT" 帰山栄治編曲<br/>
+                    <YouTubeEmbed videoid="kjmad-JvAfo" width={280} params="controls=0" className="items-center" /><br/>
+
+                    ＜第２部＞ <br/>
+
+                    13. マヅルカーバレエ組曲“コッペリア”より Léo Deliebs/川瀬憲司編曲<br/>
+                    <YouTubeEmbed videoid="WkspQSK6Qfc" width={280} params="controls=0" className="items-center" /><br/>
+
+                    リュートの為の古い舞曲とアリア第3組曲 / Ottorino Respighi/帰山栄治編曲<br/>
+                    14. イタリアーナ<br/>
+                    <YouTubeEmbed videoid="zZ5lH42WaDY" width={280} params="controls=0" className="items-center" /><br/>
+
+                    15. 宮廷のアリア<br/>
+                    <YouTubeEmbed videoid="sWvdTbnXjNk" width={280} params="controls=0" className="items-center" /><br/>
+
+                    16. シシリアーナ<br/>
+                    <YouTubeEmbed videoid="6OVcfXPm0F4" width={280} params="controls=0" className="items-center" /><br/>
+
+                    17. パッサカリア<br/>
+                    <YouTubeEmbed videoid="7mbcBw65mho" width={280} params="controls=0" className="items-center" /><br/>
                   </td>
                 </tr>
               </tbody>
             </Table>
-            <div className='mb-10 text-pink-600 flex flex-col'>
-              <a href="#top" className="flex hover:text-pink-400 duration-300">Page Top</a>
+            <div className='mb-10 text-pink-600 flex md:flex-row flex-col mt-5'>
+            <a href="/8" className="flex mb-2 hover:text-pink-400 duration-300">＜前の年の演奏会</a>
+              <a href="#top" className="flex mb-2 md:ml-10 hover:text-pink-400 duration-300">↑ページトップ</a>
+              <a href="/10" className="flex md:ml-10 hover:text-pink-400 duration-300">次の年の演奏会＞</a>
             </div>
           </main>
         </div>
