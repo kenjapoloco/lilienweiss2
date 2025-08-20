@@ -13,7 +13,7 @@ export default function Music() {
     <div className={`${geistSans.className} ${geistMono.className} font-sans`}>
       <Head>
         <title>リリエンワイス</title>
-        <link rel="icon" href="favicon.ico"/>
+        <Link rel="icon" href="favicon.ico"/>
       </Head>
       <header className="text-pink-500 font-medium text-shadow-2xs border-b border-gray-300 bg-pink-100 fixed w-full top-0">
        <div className="container flex mx-auto flex-col p-1 md:flex-row items-center md:items-end justify-between" >
@@ -79,8 +79,8 @@ export default function Music() {
               <a href="#top" className="flex hover:text-pink-400 duration-300">Page Top</a>
             </div>
           </main>
-        </div>
-        <footer>
+      </div>
+      <footer>
           <div className='flex justify-center pt-5 pb-15 border-t border-green-200  w-full  text-1xl font-bold text-center'>
               <Link className="flex " href="/"><Image className="mr-1" src="/img/icon.png" alt="icon" width={10} height={10}/>ホーム</Link>
               <Link className="flex ml-5" href="/about"><Image className="mr-1" src="/img/icon.png" alt="icon" width={10} height={10}/>楽団について</Link>
@@ -90,9 +90,9 @@ export default function Music() {
           </div>
           <div className="w-full">
               <p className='flex justify-center  w-full text-1xl pt-0.5 text-center'>Copyright &copy: 2025 </p>
-              <img className="w-full center" src="/img/hana.png" width={1980} height={10}/>
+              <Image className="w-full center" alt='sample image' src="/img/hana.png" width={1980} height={10}/>
           </div>
-        </footer>
-     </div>
+      </footer>
+    </div>
   );
 };
