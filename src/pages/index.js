@@ -44,10 +44,9 @@ export default function Home() {
       <section className='container justify-center flex-col mb-16 w-full'>
       <div className="flex flex-col mb-15 lg:pr-24 md:pr-16 items-center text-center">
         <button href="/schedule" className="text-white font-bold bg-green-500 mb-10 py-1 px-2 border-0 rounded text-lg hover:bg-green-400 duration-300">詳細はこちら</button>
-        <img className='w-2/3' src="/img/paper.png" alt="パンフレット" width={1080} height={1542} />
+        <Image className='w-2/3' src="/img/paper.png" alt="パンフレット" width={1080} height={1542} />
       </div> 
       </section>
- 
         <footer>
           <div className='flex justify-center pt-5 pb-15 border-t border-green-200  w-full  text-1xl font-bold text-center'>
               <Link className="flex " href="/"><Image className="mr-1" src="/img/icon.png" alt="icon" width={10} height={10}/>ホーム</Link>

@@ -95,7 +95,7 @@ export default function Music() {
                       11. ”もろびとこぞりて” 帰山栄治編曲<br/>
                       <YouTubeEmbed videoid="kGLtLSRtKGs" width={280} params="controls=0" className="items-center" /><br/>
 
-                      12. ”HOLY NIGHT" 帰山栄治編曲<br/>
+                      12. HOLY NIGHT 帰山栄治編曲<br/>
                       <YouTubeEmbed videoid="kjmad-JvAfo" width={280} params="controls=0" className="items-center" /><br/>
 
                       ＜第２部＞ <br/>
