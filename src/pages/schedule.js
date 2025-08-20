@@ -44,11 +44,11 @@ export default function Schedule() {
       </div>
       <div className="flex container mx-auto py-20 px-30 flex-col md:flex-row items-center justify-center">
         <div className="md:w-3/5 flex-grow mb-16 lg:pr-24 md:pr-16 items-center">
-              <Image src="/img/index.jpg" alt="写真" width={1842} height={1080} />
+          <h1 className='text-1xl font-medium mb-3 ml-25 md:ml-10'>&lt;演奏する曲リスト&gt;</h1>
+          <Image src="/img/paper.png" alt="パンフレット" width={1080} height={1542} />
         </div>
         <div className="md:w-1/2 lg:max-w-lg w-5/6">
-              <h1 className='mb-3 ml-17'>&lt;演奏曲目について&gt;</h1>
-              <Image src="/img/paper.png" alt="パンフレット" width={1080} height={1542} />
+          <Image src="/img/1.png" alt="写真" width={1842} height={1080} />              
         </div>
       </div>
       <footer>
