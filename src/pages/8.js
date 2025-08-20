@@ -47,8 +47,8 @@ export default function Music() {
         </div>
         <main class="main" className='container items-center text-center flex flex-col mr-5 ml-5 mt-40'>
         <div className='mb-5 text-pink-600 flex flex-row'>
-            <a href="/7" className="flex mb-2 hover:text-pink-400 duration-300">＜前年へ</a>
-              <a href="/9" className="flex ml-30 md:ml-75 lg:ml-130 hover:text-pink-400 duration-300">次年へ＞</a>
+            <Link href="/7" className="flex mb-2 hover:text-pink-400 duration-300">＜前年へ</Link>
+              <Link href="/9" className="flex ml-30 md:ml-75 lg:ml-130 hover:text-pink-400 duration-300">次年へ＞</Link>
             </div>
           <h1 className="text-3xl font-bold md:text-5xl flex flex-col mb-3">第8回定期演奏会</h1>
           <Table border="1" cellpadding="2" className='flex flex-col border border-slate-500'>
@@ -120,9 +120,9 @@ export default function Music() {
               </tbody>
             </Table>
             <div className='mb-10 text-pink-600 flex md:flex-row flex-col mt-5'>
-            <a href="/7" className="flex mb-2 hover:text-pink-400 duration-300">＜前の年の演奏会</a>
-              <a href="#top" className="flex mb-2 md:ml-10 hover:text-pink-400 duration-300">↑ページトップ</a>
-              <a href="/9" className="flex md:ml-10 hover:text-pink-400 duration-300">次の年の演奏会＞</a>
+            <Link href="/7" className="flex mb-2 hover:text-pink-400 duration-300">＜前の年の演奏会</Link>
+              <Link href="#top" className="flex mb-2 md:ml-10 hover:text-pink-400 duration-300">↑ページトップ</Link>
+              <Link href="/9" className="flex md:ml-10 hover:text-pink-400 duration-300">次の年の演奏会＞</Link>
             </div>
           </main>
         </div>

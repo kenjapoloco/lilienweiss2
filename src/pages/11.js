@@ -47,7 +47,7 @@ export default function Music() {
         </div>
         <main class="main" className='container items-center text-center flex flex-col pr-5 pl-5 mt-40'>
         <div className='mb-5 text-pink-600 flex flex-row'>
-              <a href="/10" className="flex  text-end hover:text-pink-400 duration-300">＜前年へ</a>
+              <Link href="/10" className="flex  text-end hover:text-pink-400 duration-300">＜前年へ</Link>
             </div>
           <h1 className="text-3xl font-bold md:text-5xl flex flex-col mb-3">第11回定期演奏会</h1>
           <Table border="1" cellpadding="2" className='flex flex-col border border-slate-500'>
@@ -119,8 +119,8 @@ export default function Music() {
               </tbody>
             </Table>
             <div className='mb-5 text-pink-600 flex flex-row'>
-            <a href="/10" className="flex ml-30 md:ml-75 lg:ml-130 hover:text-pink-400 duration-300">＜前年へ</a>
-            <a href="#top" className="flex mb-2 hover:text-pink-400 duration-300">↑ページトップ</a>
+            <Link href="/10" className="flex ml-30 md:ml-75 lg:ml-130 hover:text-pink-400 duration-300">＜前年へ</Link>
+            <Link href="#top" className="flex mb-2 hover:text-pink-400 duration-300">↑ページトップ</Link>
             </div>
           </main>
         </div>
