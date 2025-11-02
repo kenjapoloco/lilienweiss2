@@ -11,7 +11,8 @@ export default function Home() {
   return (
     <div className={`${geistSans.className} ${geistMono.className} font-sans`}>
       <Head>
-        <title>リリエンワイス</title>
+        <title>マンドリンアンサンブル リリエンワイス</title>
+        <meta name="description" content="愛知県で活動するギターマンドリン楽団リリエンワイスの公式ホームページです。" />
         <Link rel="icon" href="favicon.ico"/>
       </Head>
       <header className="text-pink-500 font-medium text-shadow-2xs border-b border-gray-300 bg-pink-100 fixed w-full top-0">
