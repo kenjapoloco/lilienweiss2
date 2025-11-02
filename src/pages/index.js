@@ -13,6 +13,7 @@ export default function Home() {
       <Head>
         <title>マンドリンアンサンブル リリエンワイス</title>
         <meta name="description" content="愛知県で活動するギターマンドリン楽団リリエンワイスの公式ホームページです。" />
+        <meta name="google-site-verification" content="yh0DVL-LkT1PgPJJU44luuH1ASzc_soF0jYtTkIPk5A" />
         <Link rel="icon" href="favicon.ico"/>
       </Head>
       <header className="text-pink-500 font-medium text-shadow-2xs border-b border-gray-300 bg-pink-100 fixed w-full top-0">
