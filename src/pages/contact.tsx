@@ -29,7 +29,7 @@ export default function Contact() {
       </Head>
       <header className="text-pink-500 font-medium text-shadow-2xs border-b border-gray-300 bg-pink-100 fixed w-full top-0">
        <div className="container flex mx-auto flex-col p-1 md:flex-row items-center md:items-end justify-between" >
-         <Image alt='sample image' className="mb-1 md:mb-0 lg:ml-5" src="/img/header4.png" width={180} height={180}/>
+         <Link href="/"><Image alt='sample image' className="mb-1 md:mb-0 lg:ml-5" src="/img/header4.png" width={180} height={180}/></Link>
          <div className="md:ml-auto text-base">
            <Link href="/" className="mr-4 hover:text-pink-400 duration-300">ホーム</Link>
            <Link href="/about" className="mr-4 hover:text-pink-400 duration-300">リリエンワイスについて</Link>
